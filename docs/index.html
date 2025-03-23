@@ -1,12 +1,12 @@
 <!-- Generated. Do not edit manually! -->
-<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><title>[Lyte2D] Home</title><link rel="icon" type="image/png" href="public/icon.png" /><link rel="stylesheet" href="public/prism.min.css" /><link rel="stylesheet" href="public/style.css" /><script src="public/prism.min.js"></script><script src="public/prism-lua.min.js"></script><script src="public/prism-typescript.min.js"></script></head><body><header id="top"><section style="padding-bottom: 10px; flex-direction: column" class="container textcenter"><a class="item" style="padding-top:10px; padding-left:10px;" href="index.html#top"><span class="logo">Lyte2D</span></a><div style="padding-top:10px;" class="item textcenter"><a href="index.html#about" class="menulink">About</a><span>| </span><a href="index.html#games" class="menulink">Games</a><span>| </span><a href="index.html#examples" class="menulink">Examples</a><span>| </span><a href="index.html#guide" class="menulink">User guide</a><span>| </span><a href="index.html#api" class="menulink">API</a></div><div class="item1"> </div></section><a style="position:fixed; top: 25px; right: 20px;" href="index.html#top"><img height="25px" src="public/icon.png" /></a></header><main><section id="about" class="sections"><div class="title">About</div><p> Lyte2D is a simple, lightweight, free and opensource Lua framework for writing games. </p><p> Lyte2D is inspired by LOVE2D.</p><p> Hello world in Lyte2D: </p><pre><code id="example-1" class="language-lua" style="background-color:inherit">function lyte.tick()
+<!DOCTYPE html><html lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport" /><meta charset="UTF-8" /><title>[Lyte2D] Home</title><link rel="icon" type="image/png" href="public/icon.png" /><link href="public/prism.min.css" rel="stylesheet" /><link href="public/style.css" rel="stylesheet" /><script src="public/prism.min.js"></script><script src="public/prism-lua.min.js"></script><script src="public/prism-typescript.min.js"></script></head><body><header id="top"><section class="container textcenter" style="padding-bottom: 10px; flex-direction: column"><a class="item" style="padding-top:10px; padding-left:10px;" href="index.html#top"><span class="logo">Lyte2D</span></a><div class="item textcenter" style="padding-top:10px;"><a href="index.html#about" class="menulink">About</a><span>| </span><a href="index.html#games" class="menulink">Games</a><span>| </span><a href="index.html#examples" class="menulink">Examples</a><span>| </span><a href="index.html#guide" class="menulink">User guide</a><span>| </span><a href="index.html#api" class="menulink">API</a></div><div class="item1"> </div></section><a href="index.html#top" style="position:fixed; top: 25px; right: 20px;"><img src="public/icon.png" height="25px" /></a></header><main><section id="about" class="sections"><div class="title">About</div><p> Lyte2D is a simple, lightweight, free and opensource Lua framework for writing games. </p><p> Lyte2D is inspired by LOVE2D.</p><p> Hello world in Lyte2D: </p><pre><code style="background-color:inherit" id="example-1" class="language-lua">function lyte.tick()
     lyte.draw_text("Hello, world", 0, 0)
 end
 </code></pre><script> Prism.highlightElement(document.getElementById("example-1")); </script><p>Lyte2D is small (Windows and Linux binaries are each less than 2 MB zipped) and supports HTML5 by compiling into WASM.</p><p style="color: brown;">                Lyte2D is currently "alpha" software.
                 Unless you know what you're doing, you probably shouldn't use it in "production."
                 But if you have some programming experience, especially with Lua you should be fine.
                 As such, it's ready to use for experimentation and "jam" style games.
-            </p><p>Lyte2D works on Windows, Linux (including SteamDeck) and HTML5.</p><b>Downloads</b><ul><li>Binaries<a target="_blank" class="menulinkext" href="https://github.com/lyte2d/lyte2d/releases">https://github.com/lyte2d/lyte2d/releases⧉</a></li><li>Source snapshot<a target="_blank" class="menulinkext" href="https://github.com/lyte2d/lyte2d">https://github.com/lyte2d/lyte2d⧉</a></li></ul><p>Once you download the binary zip, just put lyte.exe somewhere in your path (or in a local directory where you'll write your game.)</p></section><section id="games" class="sections"><div class="title">Games</div><p></p><b>Some games made with Lyte2D</b><ul><li><b>Sketchy Marathon (Demo)</b> is on<a target="_blank" class="menulinkext" href="https://zorbn.itch.io/sketchy-marathon-demo">https://zorbn.itch.io/sketchy-marathon-demo⧉</a> where you can play on your browser, download a binary</li><li><b>Pong Out (Jam Game)</b> is on<a target="_blank" class="menulinkext" href="https://m04r.itch.io/pong-out">https://m04r.itch.io/pong-out⧉</a> where you can play on your browser, download a binary or just download the sources</li><li><b>Omua War (Jam Game)</b> is on<a target="_blank" class="menulinkext" href="https://m04r.itch.io/omua-war">https://m04r.itch.io/omua-war⧉</a> where you can play on your browser</li></ul></section><section id="examples" class="sections"><div class="title">Examples</div><p>Note: Both canvas and code areas are resizable. You can also open the canvas area in a full browser tab.</p><div class="dropdown"><div><button id="dropdownMenuButton" class="dropdown-toggle" onclick="toggleDropdownMenu()" type="button">Examples ▼</button><span id="examplename"></span><a id="examplenewlink" class="menulink" href="" target="_blank"></a></div><ul id="examplesdropdown" class="dropdown-menu"><li><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 'empty')"><div style="display: none;"></div>(None)</a></li><li id="s01_hello"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's01_hello')"><div style="display: none;">-- lyte sample
+            </p><p>Lyte2D works on Windows, Linux (including SteamDeck) and HTML5.</p><b>Downloads</b><ul><li>Binaries<a target="_blank" href="https://github.com/lyte2d/lyte2d/releases" class="menulinkext">https://github.com/lyte2d/lyte2d/releases⧉</a></li><li>Source snapshot<a target="_blank" href="https://github.com/lyte2d/lyte2d" class="menulinkext">https://github.com/lyte2d/lyte2d⧉</a></li></ul><p>Once you download the binary zip, just put lyte.exe somewhere in your path (or in a local directory where you'll write your game.)</p></section><section id="games" class="sections"><div class="title">Games</div><p></p><b>Some games made with Lyte2D</b><ul><li><b>Sketchy Marathon (Steam)</b> is on<a target="_blank" href="https://store.steampowered.com/app/3235640/Sketchy_Marathon" class="menulinkext">https://store.steampowered.com/app/3235640/Sketchy_Marathon⧉</a> where you can buy the game on Steam</li><li><b>Sketchy Marathon (Demo)</b> is on<a target="_blank" href="https://zorbn.itch.io/sketchy-marathon-demo" class="menulinkext">https://zorbn.itch.io/sketchy-marathon-demo⧉</a> where you can play on your browser, download a binary</li><li><b>Pong Out (Jam Game)</b> is on<a target="_blank" href="https://m04r.itch.io/pong-out" class="menulinkext">https://m04r.itch.io/pong-out⧉</a> where you can play on your browser, download a binary or just download the sources</li><li><b>Omua War (Jam Game)</b> is on<a target="_blank" href="https://m04r.itch.io/omua-war" class="menulinkext">https://m04r.itch.io/omua-war⧉</a> where you can play on your browser</li></ul></section><section id="examples" class="sections"><div class="title">Examples</div><p>Note: Both canvas and code areas are resizable. You can also open the canvas area in a full browser tab.</p><div class="dropdown"><div><button id="dropdownMenuButton" onclick="toggleDropdownMenu()" type="button" class="dropdown-toggle">Examples ▼</button><span id="examplename"></span><a target="_blank" href="" id="examplenewlink" class="menulink"></a></div><ul id="examplesdropdown" class="dropdown-menu"><li><a target="none" onclick="on_examplelink_click(event, 'empty')" href="about:blank" class="menulink"><div style="display: none;"></div>(None)</a></li><li id="s01_hello"><a target="none" onclick="on_examplelink_click(event, 's01_hello')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 -- load an image
 local image_1 = lyte.load_image("assets/hero.png")
@@ -72,7 +72,7 @@ function lyte.tick(dt, width, height)
 end
 
 
-</div>s01_hello</a></li><li id="s02_movement"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's02_movement')"><div style="display: none;">-- lyte sample
+</div>s01_hello</a></li><li id="s02_movement"><a target="none" onclick="on_examplelink_click(event, 's02_movement')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local total_time = 0
 local SCALE = 3
@@ -119,7 +119,7 @@ function lyte.tick(dt, width, height)
     lyte.draw_text("SPACE or LMB: change sprite tick", 10, height-40)
 
 end
-</div>s02_movement</a></li><li id="s03_music"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's03_music')"><div style="display: none;">-- lyte sample
+</div>s02_movement</a></li><li id="s03_music"><a target="none" onclick="on_examplelink_click(event, 's03_music')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local total_time = 0
 
@@ -168,7 +168,7 @@ function lyte.tick(dt, width, height)
     lyte.set_color(0.9,0.8,0.8, math.abs(math.cos(total_time/2))+0.3)
     lyte.draw_text("Left/Right: change pan", 10, height-40)
 end
-</div>s03_music</a></li><li id="s04_soundfx"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's04_soundfx')"><div style="display: none;">-- lyte sample
+</div>s03_music</a></li><li id="s04_soundfx"><a target="none" onclick="on_examplelink_click(event, 's04_soundfx')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local sfx_hurt = lyte.load_sound("assets/sfx_hurt.wav")
 local sfx_shoot = lyte.load_sound("assets/sfx_shoot.ogg")
@@ -220,7 +220,7 @@ function lyte.tick(dt, width, height)
     lyte.set_color(1, 1, 0, 1)
     lyte.draw_text("(on browser, sounds can be delayed)", 5, 120)
 end
-</div>s04_soundfx</a></li><li id="s05_canvas"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's05_canvas')"><div style="display: none;">-- lyte sample
+</div>s04_soundfx</a></li><li id="s05_canvas"><a target="none" onclick="on_examplelink_click(event, 's05_canvas')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local total_time = 0
 
@@ -279,7 +279,7 @@ function lyte.tick(dt, width, height)
     lyte.draw_text("LMB to re-generate canvas image", 10, height-40-20)
     lyte.draw_text("RMB to cls canvas image", 10, height-40)
 end
-</div>s05_canvas</a></li><li id="s06_basic_shader"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's06_basic_shader')"><div style="display: none;">-- lyte sample
+</div>s05_canvas</a></li><li id="s06_basic_shader"><a target="none" onclick="on_examplelink_click(event, 's06_basic_shader')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local total_time = 0
 
@@ -368,7 +368,7 @@ function lyte.tick(dt, width, height)
 
     lyte.reset_shader()
 end
-</div>s06_basic_shader</a></li><li id="s07_basic_shader2"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's07_basic_shader2')"><div style="display: none;">-- lyte sample
+</div>s06_basic_shader</a></li><li id="s07_basic_shader2"><a target="none" onclick="on_examplelink_click(event, 's07_basic_shader2')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local total_time = 0
 
@@ -464,7 +464,7 @@ function lyte.tick(dt, width, height)
     lyte.reset_color()
     lyte.draw_text("Hold Space/LMB for 'transparent'", 10, height-30)
 end
-</div>s07_basic_shader2</a></li><li id="s08_shader_spinning_plus"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's08_shader_spinning_plus')"><div style="display: none;">-- lyte sample
+</div>s07_basic_shader2</a></li><li id="s08_shader_spinning_plus"><a target="none" onclick="on_examplelink_click(event, 's08_shader_spinning_plus')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local state = {totaltime = 0}
 
@@ -538,7 +538,7 @@ function lyte.tick(dt, width, height, resized)
   lyte.reset_shader()
   lyte.draw_text("hello from lyte2d. shaders are cool.", 5, (height - 40))
 end
-</div>s08_shader_spinning_plus</a></li><li id="s09_shader_canvas"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's09_shader_canvas')"><div style="display: none;">-- lyte sample
+</div>s08_shader_spinning_plus</a></li><li id="s09_shader_canvas"><a target="none" onclick="on_examplelink_click(event, 's09_shader_canvas')" href="about:blank" class="menulink"><div style="display: none;">-- lyte sample
 
 local state = {totaltime = 0}
 
@@ -635,7 +635,7 @@ function lyte.tick(dt, width, height, resized)
 
   lyte.draw_text("lyte2d shader inside canvas. move mouse.", 5, (height - 40))
 end
-</div>s09_shader_canvas</a></li><li id="s10_imagebatch"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's10_imagebatch')"><div style="display: none;">-- lyte.ImageBatch sample
+</div>s09_shader_canvas</a></li><li id="s10_imagebatch"><a target="none" onclick="on_examplelink_click(event, 's10_imagebatch')" href="about:blank" class="menulink"><div style="display: none;">-- lyte.ImageBatch sample
 
 local img = lyte.load_image("assets/batch.png")
 
@@ -672,7 +672,7 @@ function lyte.tick()
         add_items()
     end
     batch:draw()
-end</div>s10_imagebatch</a></li><li id="s11_physics"><a target="none" class="menulink" href="about:blank" onclick="on_examplelink_click(event, 's11_physics')"><div style="display: none;">-- simple physics world
+end</div>s10_imagebatch</a></li><li id="s11_physics"><a target="none" onclick="on_examplelink_click(event, 's11_physics')" href="about:blank" class="menulink"><div style="display: none;">-- simple physics world
 local world = lyte.new_world()
 
 -- colliders are stored in these tables
@@ -749,7 +749,7 @@ function lyte.tick(dt)
     lyte.draw_text("HELLO!", 10, 10);
     refresh_objects(dt)
 end
-</div>s11_physics</a></li></ul></div><div class="resizer ugly"><iframe id="demosiframe" class="resized lyte-iframe" title="demos" name="demos"></iframe></div><div class="resizer2 ugly"><div class="resized source-area"><pre><code id="examplecode" class="language-lua"></code></pre></div></div></section><section id="guide" class="sections"><div class="title">User guide</div><p></p><b>Get started</b><p>Download the executable and place it somewhere in your path. 'lyte.exe' (or 'lyte' on linux) is assumed to be in your path.</p><ul><li>Create an <code>app.lua</code> file.</li><li>Implement <code>lyte.tick</code> function.  (See examples) </li><li>Make sure you're in the same directory in your shell/cmd window</li><li>Start your game with <code>lyte</code>.</li></ul><b>Want to run some code in another location?</b><ul><li>If you want to use another directory as the base, you can do <code>lyte dir=../my_games/testgame</code> </li><li>If you want to use another file as your 'main' file, you can do <code>lyte app=myapp</code>, assuming you have 'myapp.lua' in the current directory. You should NOT specify the extension</li><li><code>dir=...</code> and <code>app=...</code> arguments can be combined to run a file in an arbitrary directory</li></ul><b>Package your game once you're ready.</b><ul><li>Ready to share your game with others? Cool!</li><li>Create an 'app.zip' file. Inside the zip, 'app.lua' should be at the root/topmost location</li><li>Copy 'lyte.exe', and rename it to 'mygame.exe' (swap 'mygame' for your chosen binary name)</li><li>Alternatively, consider using 'lyte_gui.exe' on Windows, for no-console launch</li><li>Running <code>mygame</code> will automatically load app.zip if it's in the same directory.</li><li>Option 1: you can share the exe and the zip file, and your players can play it as it is</li><li>Option 2: Fuse your app (next section.)</li></ul><b>App 'fusing'</b><ul><li>Lyte2D support LOVE2D style app fusing. Basically you merge the exe and the zip files into a single binary that will contain everything needed to run your code.</li><li>On linux you can do <code>cat lyte.exe app.zip > mygame.exe</code>. Then just distribute 'mygame.exe' however you'd like.</li><li>Similar on Windows. (...to be documented, in the meantime see LOVE2D docs.)</li></ul><b>Configuring your app.</b><ul><li>If you'd like to configure your window size, fullscreen, etc. before the app loads, you can create a 'config.lua' file next to your 'app.lua'. Here's an example config.lua file: </li><pre><code id="cfg-1" class="language-lua" style="background-color:inherit">return {
+</div>s11_physics</a></li></ul></div><div class="resizer ugly"><iframe class="resized lyte-iframe" name="demos" id="demosiframe" title="demos"></iframe></div><div class="resizer2 ugly"><div class="resized source-area"><pre><code id="examplecode" class="language-lua"></code></pre></div></div></section><section id="guide" class="sections"><div class="title">User guide</div><p></p><b>Get started</b><p>Download the executable and place it somewhere in your path. 'lyte.exe' (or 'lyte' on linux) is assumed to be in your path.</p><ul><li>Create an <code>app.lua</code> file.</li><li>Implement <code>lyte.tick</code> function.  (See examples) </li><li>Make sure you're in the same directory in your shell/cmd window</li><li>Start your game with <code>lyte</code>.</li></ul><b>Want to run some code in another location?</b><ul><li>If you want to use another directory as the base, you can do <code>lyte dir=../my_games/testgame</code> </li><li>If you want to use another file as your 'main' file, you can do <code>lyte app=myapp</code>, assuming you have 'myapp.lua' in the current directory. You should NOT specify the extension</li><li><code>dir=...</code> and <code>app=...</code> arguments can be combined to run a file in an arbitrary directory</li></ul><b>Package your game once you're ready.</b><ul><li>Ready to share your game with others? Cool!</li><li>Create an 'app.zip' file. Inside the zip, 'app.lua' should be at the root/topmost location</li><li>Copy 'lyte.exe', and rename it to 'mygame.exe' (swap 'mygame' for your chosen binary name)</li><li>Alternatively, consider using 'lyte_gui.exe' on Windows, for no-console launch</li><li>Running <code>mygame</code> will automatically load app.zip if it's in the same directory.</li><li>Option 1: you can share the exe and the zip file, and your players can play it as it is</li><li>Option 2: Fuse your app (next section.)</li></ul><b>App 'fusing'</b><ul><li>Lyte2D support LOVE2D style app fusing. Basically you merge the exe and the zip files into a single binary that will contain everything needed to run your code.</li><li>On linux you can do <code>cat lyte.exe app.zip > mygame.exe</code>. Then just distribute 'mygame.exe' however you'd like.</li><li>Similar on Windows. (...to be documented, in the meantime see LOVE2D docs.)</li></ul><b>Configuring your app.</b><ul><li>If you'd like to configure your window size, fullscreen, etc. before the app loads, you can create a 'config.lua' file next to your 'app.lua'. Here's an example config.lua file: </li><pre><code style="background-color:inherit" id="cfg-1" class="language-lua">return {
     window_width = 800,
     window_height = 500,
     window_title = "my game",
@@ -758,7 +758,7 @@ end
     default_filtermode = "nearest", -- linear
     default_blendmode = "blend",
   }
-</code></pre><script> Prism.highlightElement(document.getElementById("cfg-1")); </script><li>Note: you need to keep this file next to the zip or exe file if you fuse your app</li></ul><b>HTML5 -- browser games!</b><ul><li>Lyte2D has WASM builds! Just put your `app.zip` file next to the HTML5 files. (lyte.html, lyte.js, lyte.wasm).</li><li>Rename 'lyte.html' to suit your needs. And put all four files up on a static host (itch.io, github pages, etc.)</li></ul><b>'Advanced' features</b><ul><li>You can get to a REPL to inspect/edit your game real time. Start with <code>lyte repl=lua</code>.</li><li>In REPL mode, you can stop the game anytime, inspect/change global variables, and do whatever before continuing the game.</li><li>On Windows just typing a letter will pause the game. And you can start using lyte as a Lua REPL.</li><li>Similar on Linux, however the key is not captured. So after the first key (any key), you can type the commands.</li><li>Hit enter on an empty line to unpause the game loop.</li></ul><b>Known issues with alpha</b><ul><li>Functions do not have default arguments, so all arguments must be passed to each function. This will be fixed in a later release.</li><li>Line/Circle drawing can have minor issues with very small sizes.</li><li>Font rendering can have minor issues</li><li>Browser version has rendering problems with pixels. Desktop versions look much better</li><li>Browser version has issues, especially delays, with audio rendering. Desktop versions are much better</li><li>Firefox has some issues with some shader features, while Edge/Chrome work fine</li><li>There could be lurking bugs in native code (alpha software.)</li><li>REPL does not provide code-completions yet (although the machinery is there.)</li><li>Missing features (coming up in later releases): physics, networking, native UI etc.</li></ul></section><section id="api" class="sections"><div class="title">API</div><p>Note: some of the experimental APIs are not documented.</p><div class="api-scroller"><pre><code id="code-api" class="language-typescript" style="background-color:inherit">// generated
+</code></pre><script> Prism.highlightElement(document.getElementById("cfg-1")); </script><li>Note: you need to keep this file next to the zip or exe file if you fuse your app</li></ul><b>HTML5 -- browser games!</b><ul><li>Lyte2D has WASM builds! Just put your `app.zip` file next to the HTML5 files. (lyte.html, lyte.js, lyte.wasm).</li><li>Rename 'lyte.html' to suit your needs. And put all four files up on a static host (itch.io, github pages, etc.)</li></ul><b>'Advanced' features</b><ul><li>You can get to a REPL to inspect/edit your game real time. Start with <code>lyte repl=lua</code>.</li><li>In REPL mode, you can stop the game anytime, inspect/change global variables, and do whatever before continuing the game.</li><li>On Windows just typing a letter will pause the game. And you can start using lyte as a Lua REPL.</li><li>Similar on Linux, however the key is not captured. So after the first key (any key), you can type the commands.</li><li>Hit enter on an empty line to unpause the game loop.</li></ul><b>Known issues with alpha</b><ul><li>Functions do not have default arguments, so all arguments must be passed to each function. This will be fixed in a later release.</li><li>Line/Circle drawing can have minor issues with very small sizes.</li><li>Font rendering can have minor issues</li><li>Browser version has rendering problems with pixels. Desktop versions look much better</li><li>Browser version has issues, especially delays, with audio rendering. Desktop versions are much better</li><li>Firefox has some issues with some shader features, while Edge/Chrome work fine</li><li>There could be lurking bugs in native code (alpha software.)</li><li>REPL does not provide code-completions yet (although the machinery is there.)</li><li>Missing features (coming up in later releases): physics, networking, native UI etc.</li></ul></section><section id="api" class="sections"><div class="title">API</div><p>Note: some of the experimental APIs are not documented.</p><div class="api-scroller"><pre><code style="background-color:inherit" id="code-api" class="language-typescript">// generated
 declare namespace lyte {
 
     // functions
@@ -1415,7 +1415,7 @@ declare namespace lyte {
                 el_newlink.setAttribute("href", "lyte.html?zip=examples.zip&app=" + app);
               }
 
-        </script></main><footer><div class="textcenter">(c) moreward<a target="_blank" class="menulinkext" href="https://morew4rd.com">web⧉</a><a target="_blank" class="menulinkext" href="https://twitter.com/morew4rd">twitter⧉</a><a target="_blank" class="menulinkext" href="https://github.com/morew4rd">github⧉</a><a target="_blank" class="menulinkext" href="https://morew4rd.itcH.io">itch.io⧉</a></div></footer></body><script src="https://www.googletagmanager.com/gtag/js?id=G-ZCQ9FCCMV2"></script><script>  window.dataLayer = window.dataLayer || [];
+        </script></main><footer><div class="textcenter">(c) moreward<a target="_blank" href="https://morew4rd.com" class="menulinkext">web⧉</a><a target="_blank" href="https://twitter.com/morew4rd" class="menulinkext">twitter⧉</a><a target="_blank" href="https://github.com/morew4rd" class="menulinkext">github⧉</a><a target="_blank" href="https://morew4rd.itcH.io" class="menulinkext">itch.io⧉</a></div></footer></body><script src="https://www.googletagmanager.com/gtag/js?id=G-ZCQ9FCCMV2"></script><script>  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 

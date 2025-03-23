@@ -73,6 +73,9 @@ local function Page()
             H.b "Some games made with Lyte2D",
             H.ul {
                 H.li {
+                    H.b "Sketchy Marathon (Steam)", " is on", MenuLinkExt("https://store.steampowered.com/app/3235640/Sketchy_Marathon", "https://store.steampowered.com/app/3235640/Sketchy_Marathon"), " where you can buy the game on Steam",
+                },
+                H.li {
                     H.b "Sketchy Marathon (Demo)", " is on", MenuLinkExt("https://zorbn.itch.io/sketchy-marathon-demo", "https://zorbn.itch.io/sketchy-marathon-demo"), " where you can play on your browser, download a binary",
                 },
                 H.li {
