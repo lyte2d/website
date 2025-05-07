@@ -7,5 +7,5 @@ fi
 mkdir -p wasm
 
 cp $LYTEBINDIR/lyte.html ./wasm/
-cp $LYTEBINDIR/lyte.js ./wasm/
-cp $LYTEBINDIR/lyte.wasm ./wasm/
+# cp $LYTEBINDIR/lyte.js ./wasm/
+# cp $LYTEBINDIR/lyte.wasm ./wasm/
