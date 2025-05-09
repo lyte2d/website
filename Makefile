@@ -35,6 +35,6 @@ host:	## run the website (docs folder) for testing
 
 PUSH-TO-PROD:
 	rm -rf tmp/*
-	git add -a
+	git add -A
 	git commit -m "update"
 	git push origin main
