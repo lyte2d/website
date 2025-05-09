@@ -225,7 +225,6 @@ ${EXAMPLES}
             <p>Note: some of the experimental APIs are not documented.</p>
             <div class="api">
 <pre><code style="background-color:inherit" id="code-api" class="language-typescript">
-// Note: The type declarations are in TypeScript format for convenience only since Lua does not have static types
 ${API_DOCS}
 </code></pre>
 <script> Prism.highlightElement(document.getElementById("code-api")); </script>
