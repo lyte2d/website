@@ -99,10 +99,10 @@
   .item2 {
     flex-grow: 2;
   }
-  .api-scroller {
-    max-height: 900px;
+  .api {
+    /* max-height: 900px;
     height: 500px;
-    overflow: auto;
+    overflow: auto; */
     border:2px dashed black;
   }
   /* #api { */
