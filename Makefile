@@ -26,7 +26,7 @@ refresh-lyte-html:	# update lyte.html from lyte folder
 	cp -r ./lyte/* ./docs
 
 update-index-html: # update (rebuild) index.html
-	node build.js > docs/index.html
+	node src/gen_website.js > docs/index.html
 
 build: clean  refresh-root-files  refresh-apidocs  refresh-examples  refresh-lyte-html update-index-html ## BUILD SITE
 
