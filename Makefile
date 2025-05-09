@@ -10,25 +10,27 @@ clean:	## clean: docs and tmp folders
 	rm -rf docs/*
 	rm -rf tmp/*
 
-
-refresh-root-files:  # copy public files + CNAME (for github hosting)
-	cp -r ./root/* ./docs
-
-refresh-apidocs: # update examples.zip. assumes lyte2d repo is on a sibling directory
-	cp $(LYTE2D)/typings/lyte.d.tl ./tmp/
-
-refresh-examples:  # update examples.zip. assumes lyte2d repo is on a sibling directory
-	cp -r $(LYTE2D)/samples ./tmp/
-	cd ./tmp/samples && zip -9 -u -r ../../docs/examples.zip * && cd ../..
-
-refresh-lyte-html:	# update lyte.html from lyte folder
+refresh-lyte-html:	## update lyte.html from lyte folder
 	echo "MAKE SURE YOU HAVE UPDATED './lyte/lyte.html' to the correct version!"
 	cp -r ./lyte/* ./docs
 
-update-index-html: # update (rebuild) index.html
+refresh-root-files:  ## copy public files + CNAME (for github hosting)
+	cp -r ./src/root/* ./docs
+
+refresh-apidocs: ## update examples.zip. assumes lyte2d repo is on a sibling directory
+	cp $(LYTE2D)/typings/lyte.d.tl ./tmp/
+
+refresh-examples:  ## update examples.zip. assumes lyte2d repo is on a sibling directory
+	cp -r $(LYTE2D)/samples ./tmp/
+	cd ./tmp/samples && zip -9 -u -r ../../docs/examples.zip * && cd ../..
+
+refresh-guide:  ## update guide.html. assumes lyte2d repo is on a sibling directory
+	cp -r $(LYTE2D)/docs/guide.html ./tmp/
+
+update-index-html: ## update (rebuild) index.html
 	node src/gen_website.js > docs/index.html
 
-build: clean  refresh-root-files  refresh-apidocs  refresh-examples  refresh-lyte-html update-index-html ## BUILD SITE
+build: clean  refresh-root-files  refresh-apidocs  refresh-examples  refresh-guide refresh-lyte-html update-index-html ## BUILD SITE
 
 host:	## run the website (docs folder) for testing
 	npx http-server docs
