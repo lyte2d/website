@@ -11,7 +11,7 @@ LYTE2D=../lyte2d
 
 # The build/download location for the WASM build
 # This is used in samples on the website
-LYTE_HTML=~/Downloads/lyte2d.wasm.v0.8.0/lyte.html
+LYTE_HTML=lyte.html
 
 clean:	## clean: docs and tmp folders
 	rm -rf docs/*

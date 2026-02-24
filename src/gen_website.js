@@ -75,6 +75,12 @@ const INDEX_HTML = `
     lyte.draw_text("Hello, world", 0, 0)
 end
 </code></pre>
+            <details>
+                <summary>A more complete demo (best on desktop / laptop)</summary>
+                <p> <a class="menulinkext" target="_blank"href="https://codeberg.org/relax/lyte-intro">Get the source⧉</a> </p>
+                <p> <a class="menulinkext" target="_blank"href="https://relaxing.run/lyte-intro">Run fullscreen⧉</a> </p>
+                <p> <iframe loading="lazy" src="https://relaxing.run/lyte-intro" style="width: 100%; aspect-ratio: 16/10; border: 0"></iframe> </p>
+            </details>
             <script> Prism.highlightElement(document.getElementById("example-1")); </script>
             <p>Lyte2D is small (Windows and Linux binaries are each less than 2 MB zipped) and supports HTML5 by
                 compiling into WASM.</p>
@@ -110,6 +116,9 @@ end
                     download a binary or just download the sources</li>
                 <li><b>Omua War (Jam Game)</b> is on<a target="_blank" href="https://m04r.itch.io/omua-war"
                         class="menulinkext">https://m04r.itch.io/omua-war⧉</a> where you can play on your browser</li>
+                <li><b>NES Top Gun Hotfix 1.0.0a</b> is on<a target="_blank" href="https://relaxing.run/top-gun"
+                        class="menulinkext">https://relaxing.run/top-gun⧉</a> where you can play on your browser,
+                        or<a target="_blank" class="menulinkext" href="https://codeberg.org/relax/top-gun">get the source⧉</a></li>
             </ul>
         </section>
         <section id="examples" class="sections">
